@@ -1,6 +1,8 @@
 
 import { Component, PropTypes } from 'react'
 import { Link } from 'react-router'
+
+import Flag from './widget/flag'
 import { connect } from '../../'
 import store from '../store'
 
@@ -12,17 +14,29 @@ import {
 @connect(store)
 class ItemList extends Component {
   componentDidMount() {
-    getItems()
+    const { dispatch } = this.props
+    dispatch(getItems())
+  }
+
+  state = {
+    name: ''
   }
 
   render() {
     const {
-      items = []
+      dispatch,
+
+      items = [],
+      flag = ''
     } = this.props
+
+    const {
+      name
+    } = this.state
 
     return (
       <item-list>
-        <h3></h3>
+        <h3>List</h3>
         {
           items.map(item => (
             <div key={item.id}>
@@ -30,6 +44,15 @@ class ItemList extends Component {
             </div>
           ))
         }
+
+        <section>
+          <input placeholder='new item name' onChange={
+            e => this.setState({name: e.target.value})
+          } />
+          <button onClick={() => dispatch(addItem({name}))}>Add</button>
+        </section>
+
+        <Flag dispatch={dispatch} flag={flag} />
       </item-list>
     )
   }

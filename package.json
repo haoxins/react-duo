@@ -1,13 +1,13 @@
 {
   "name": "react-duo",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "react duo",
   "main": "build/index.js",
   "scripts": {
     "example": "npm run build && webpack --config example/webpack.js",
     "build": "babel lib --out-dir build",
     "prepublish": "npm run build",
-    "lint": "eslint lib",
+    "lint": "eslint lib example",
     "test": "echo todo"
   },
   "repository": "haoxins/react-duo",

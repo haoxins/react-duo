@@ -5,20 +5,16 @@ import store from '../store'
 export function getItems() {
   return api
     .getItems()
-    .then(({items}) => {
-      store.set({items})
-    })
+    .then(({items}) => ({items}))
 }
 
 export function addItem(data) {
-  const items = store.get('items')
+  const items = store.get('itemList.items')
 
   return api
     .addItem(data)
-    .then(({item}) => {
-      store.set({
-        items: [...items, item],
-        added: item
-      })
-    })
+    .then(({item}) => ({
+      items: [...items, item],
+      added: item
+    }))
 }

@@ -1,6 +1,5 @@
 
 import { Router, hashHistory as history } from 'react-router'
-import { Component, PropTypes } from 'react'
 import { render } from 'react-dom'
 
 import routes from './route'
