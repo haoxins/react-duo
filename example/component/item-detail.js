@@ -23,8 +23,8 @@ class ItemDetail extends Component {
     const {
       dispatch,
 
-      item = {},
-      flag = ''
+      item,
+      flag
     } = this.props
 
     return (

@@ -26,8 +26,8 @@ class ItemList extends Component {
     const {
       dispatch,
 
-      items = [],
-      flag = ''
+      items,
+      flag
     } = this.props
 
     const {

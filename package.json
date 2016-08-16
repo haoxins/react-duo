@@ -22,7 +22,7 @@
   "author": "haoxin",
   "license": "MIT",
   "dependencies": {
-    "lodash.clonedeep": "^4.4.1"
+    "lodash.clonedeep": "4"
   },
   "devDependencies": {
     "babel-cli": "6",
@@ -36,6 +36,7 @@
     "eslint": "3",
     "eslint-config-bx-bsd": "1",
     "eslint-plugin-react": "6",
+    "koa-react-view": "3",
     "react": "15",
     "react-dom": "15",
     "react-router": "2",
