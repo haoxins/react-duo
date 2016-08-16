@@ -9,8 +9,8 @@ module.exports = {
   },
 
   output: {
-    path: path.join(__dirname, '../build'),
-    filename: 'example.js'
+    path: path.join(__dirname, '../../build'),
+    filename: 'example.items.js'
   },
 
   externals: {

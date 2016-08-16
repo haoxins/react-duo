@@ -1,5 +1,5 @@
 
-import { createStore } from '../../'
+import { createStore } from '../../../'
 
 const defaults = [{
   name: 'itemList',

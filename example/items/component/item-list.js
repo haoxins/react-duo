@@ -1,9 +1,9 @@
 
 import { Component, PropTypes } from 'react'
 import { Link } from 'react-router'
+import { connect } from '../../../'
 
 import Flag from './widget/flag'
-import { connect } from '../../'
 import store from '../store'
 
 import {
