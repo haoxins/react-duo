@@ -1,6 +1,4 @@
 
-# WIP
-
 ### react-duo
 
 [![NPM version][npm-img]][npm-url]
@@ -11,11 +9,13 @@
 
 A tiny helper for tiny react app that not worth using `redux` and so on!
 
-* [Example](example)
-
 ### Usage
 
-TODO ...
+* [Example](example)
+
+### Document
+
+* Oh! The source code is less than 200 lines !
 
 ### License
 MIT

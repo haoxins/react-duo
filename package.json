@@ -1,7 +1,7 @@
 {
   "name": "react-duo",
-  "version": "0.1.1",
-  "description": "react duo",
+  "version": "0.2.0",
+  "description": "react duo - mini react redux",
   "main": "build/index.js",
   "scripts": {
     "example": "npm run build && webpack --config example/items/webpack.js",
@@ -13,6 +13,7 @@
   "repository": "haoxins/react-duo",
   "keywords": [
     "react",
+    "store",
     "duo"
   ],
   "files": [
