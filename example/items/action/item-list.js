@@ -1,20 +1,23 @@
 
-import * as api from '../api'
 import store from '../store'
 
 export function getItems() {
-  return api
-    .getItems()
-    .then(({items}) => ({items}))
+  const items = store.get('items.items') || []
+
+  return Promise.resolve({
+    total: items.length,
+    page: 1,
+    items
+  })
 }
 
 export function addItem(data) {
-  const items = store.get('itemList.items')
+  const items = store.get('items.items') || []
+  const id = items.length + 1
+  const item = {...data, id}
 
-  return api
-    .addItem(data)
-    .then(({item}) => ({
-      items: [...items, item],
-      added: item
-    }))
+  return Promise.resolve({
+    items: [...items, item],
+    added: item
+  })
 }

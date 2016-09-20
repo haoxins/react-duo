@@ -12,6 +12,15 @@ import {
 
 @connect(store)
 class ItemDetail extends Component {
+  static propTypes = {
+    item: PropTypes.object
+  }
+
+  static defaultProps = {
+    item: {},
+    flag: ''
+  }
+
   componentDidMount() {
     const { id } = this.props.params
     const { dispatch } = this.props
@@ -19,7 +28,6 @@ class ItemDetail extends Component {
   }
 
   render() {
-    const { id } = this.props.params
     const {
       dispatch,
 

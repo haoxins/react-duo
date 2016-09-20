@@ -13,6 +13,16 @@ import {
 
 @connect(store)
 class ItemList extends Component {
+  static propTypes = {
+    items: PropTypes.array
+  }
+
+  static defaultProps = {
+    items: [],
+    added: {},
+    flag: ''
+  }
+
   componentDidMount() {
     const { dispatch } = this.props
     dispatch(getItems())
