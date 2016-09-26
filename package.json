@@ -1,6 +1,6 @@
 {
   "name": "react-duo",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "react duo - mini react redux",
   "main": "build/index.js",
   "scripts": {

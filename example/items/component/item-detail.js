@@ -11,7 +11,7 @@ import {
 } from '../action/item-detail'
 
 @connect(store, {
-  'items.total': 'total'
+  total: 'items.total'
 })
 class ItemDetail extends Component {
   static propTypes = {
