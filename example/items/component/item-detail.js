@@ -10,13 +10,17 @@ import {
   getItem
 } from '../action/item-detail'
 
-@connect(store)
+@connect(store, {
+  'items.total': 'total'
+})
 class ItemDetail extends Component {
   static propTypes = {
+    total: PropTypes.number,
     item: PropTypes.object
   }
 
   static defaultProps = {
+    total: 0,
     item: {},
     flag: ''
   }
@@ -31,13 +35,14 @@ class ItemDetail extends Component {
     const {
       dispatch,
 
+      total,
       item,
       flag
     } = this.props
 
     return (
       <item-detail>
-        <h3>{`item id: ${item.id}`}</h3>
+        <h3>{`item id: ${item.id}, total: ${total}.`}</h3>
 
         <span>{`item name: ${item.name}`}</span>
 

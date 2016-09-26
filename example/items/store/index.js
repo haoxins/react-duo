@@ -5,6 +5,6 @@ export default createStore({
   smart: true,
   routes: [{
     name: 'itemDetail',
-    path: 'items/:id',
+    path: 'items/:id'
   }]
 })
