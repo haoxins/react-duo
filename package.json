@@ -1,20 +1,20 @@
 {
   "name": "react-duo",
-  "version": "0.4.0",
-  "description": "react duo - mini react redux",
+  "version": "2.0.0",
+  "description": "react with rxjs",
   "main": "build/index.js",
   "scripts": {
-    "example": "npm run build && webpack --config example/items/webpack.js",
+    "example": "npm run build && webpack --config example/webpack.js",
     "build": "babel lib --out-dir build",
     "prepublish": "npm run build",
     "lint": "eslint lib example",
+    "test-cov": "echo todo",
     "test": "echo todo"
   },
   "repository": "haoxins/react-duo",
   "keywords": [
-    "react",
-    "store",
-    "duo"
+    "reactjs",
+    "rxjs"
   ],
   "files": [
     "build/",
@@ -23,29 +23,26 @@
   "author": "haoxin",
   "license": "MIT",
   "dependencies": {
-    "lodash.clonedeep": "4"
+    "clone": "2",
+    "immutability-helper": "2",
+    "rxjs": "5",
+    "uuid": "3"
   },
   "devDependencies": {
     "babel-cli": "6",
     "babel-core": "6",
-    "babel-eslint": "6",
     "babel-loader": "6",
+    "babel-plugin-transform-class-properties": "6",
     "babel-plugin-transform-decorators-legacy": "1",
-    "babel-preset-es2015": "6",
+    "babel-plugin-transform-object-rest-spread": "6",
     "babel-preset-react": "6",
-    "babel-preset-stage-0": "6",
-    "eslint": "3",
-    "eslint-config-bx-bsd": "1",
-    "eslint-plugin-react": "6",
-    "koa-react-view": "3",
+    "jest": "19",
     "react": "15",
     "react-dom": "15",
-    "react-router": "2",
-    "webpack": "1"
+    "webpack": "2"
   },
   "eslintConfig": {
     "extends": [
-      "eslint-config-bx-bsd"
     ]
   }
 }

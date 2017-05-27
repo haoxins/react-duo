@@ -1,21 +1,21 @@
 
-### react-duo
-
 [![NPM version][npm-img]][npm-url]
 [![Build status][travis-img]][travis-url]
 [![Test coverage][coveralls-img]][coveralls-url]
 [![License][license-img]][license-url]
 [![Dependency status][david-img]][david-url]
 
-A tiny helper for tiny react app that not worth using `redux` and so on!
+### react-duo
 
-### Usage
+* Model-View-Intent with React and RxJS.
+* Dynamic, composable components.
+* Complex, polymorphic data flow with RxJS.
 
-* [Example](example)
+### APIs
 
-### Document
-
-* Oh! The source code is less than 200 lines !
+* `createStore()`: create store.
+* `connect()`: connect store to component.
+* `createAction()`: create the normal, simple actions that no need `rx`.
 
 ### License
 MIT
