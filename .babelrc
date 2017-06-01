@@ -1,2 +1,17 @@
 {
+  "presets": ["react", ["env", {
+    "targets": {
+      "safari": 10,
+      "chrome": 59,
+      "edge": 15
+    },
+    "exclude": [
+      "transform-regenerator"
+    ]
+  }]],
+  "plugins": [
+    "transform-class-properties",
+    "transform-decorators-legacy",
+    "transform-object-rest-spread"
+  ]
 }
